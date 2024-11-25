@@ -82,7 +82,7 @@ class TestDemo():
         duracao_sleep = 3
         self.driver.get("https://tdd-detroid.onrender.com/")
 
-        # self.driver.set_window_size(970, 555)
+        self.driver.maximize_window()
 
         # Aguarda carregar o python da página
         elements = self.driver.find_elements(By.CSS_SELECTOR, ".smooth")
